@@ -1,0 +1,1 @@
+{"name":"twitch-pixi-overlay","private":true,"version":"1.0.0","type":"module","scripts":{"dev":"vite","build":"vite build","preview":"vite preview","test":"node --test src/score.test.js"},"dependencies":{"pixi.js":"^8.6.6"},"devDependencies":{"vite":"^6.1.0"}}

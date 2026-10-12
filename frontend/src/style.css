@@ -1,0 +1,6 @@
+* { box-sizing: border-box; }
+html, body, #app { width: 100%; height: 100%; margin: 0; overflow: hidden; }
+body { background: transparent; font: 14px system-ui, sans-serif; }
+canvas { display: block; width: 100%; height: 100%; }
+.status { position: fixed; z-index: 1; top: 16px; left: 16px; padding: 8px 12px; color: #fff; background: #16181ddd; border: 1px solid #ffffff2b; border-radius: 8px; }
+.status.connected { color: #9ff2bb; }

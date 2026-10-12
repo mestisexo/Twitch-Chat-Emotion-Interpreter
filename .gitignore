@@ -1,0 +1,48 @@
+# ---------- Secretos / entorno ----------
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# ---------- Go ----------
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+coverage.out
+/bin/
+/tmp/
+# vendor/        # descomenta solo si NO versionas vendor
+
+# ---------- Python ----------
+venv/
+.venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# ---------- Frontend (Vite) ----------
+node_modules/
+dist/
+dist-ssr/
+.vite/
+*.local
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# ---------- Editores / SO ----------
+.vscode/*
+!.vscode/extensions.json
+.idea/
+.DS_Store
+Thumbs.db
+*.log
