@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Latencia y rendimiento
 
-Contexto: [[02-Arquitectura]]. Pruebas: [[11-Pruebas]]. Métricas: [[12-Observabilidad]].
+Contexto: [[Arquitectura]]. Pruebas: [[11-Pruebas]]. Métricas: [[12-Observabilidad]].
 
 > [!important] Todas las cifras de esta nota son **hipótesis de partida**
 > Se validan o corrigen con los benchmarks. Cuando haya datos, se actualizan aquí y se cita la medición.
@@ -85,4 +85,4 @@ Declarar siempre: CPU, RAM, versión de imagen y parámetros. Una cifra sin ento
 - Las pruebas de carga completas corren de forma programada (nocturna) y antes de cada release, no en cada PR.
 
 ## Plan de trabajo
-Se implementa por etapas como cambios de OpenSpec: ver [[16-Roadmap]] (`add-load-testing`).
+Se implementa por etapas como cambios de OpenSpec: ver [[Roadmap]] (`add-load-testing`).

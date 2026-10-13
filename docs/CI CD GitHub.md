@@ -1,11 +1,14 @@
 ---
-title: CI/CD y GitHub
-tags: [ci, github, devops]
+title: CI CD GitHub
+tags:
+  - ci
+  - github
+  - devops
 status: borrador
 updated: 2026-10-09
 ---
 
-# CI/CD y GitHub
+# CI CD GitHub
 
 Contexto: [[09-Despliegue-Docker]], [[11-Pruebas]].
 
@@ -48,4 +51,4 @@ Filtros por ruta (`paths:`) para no correr todo en cada cambio.
 `good first issue`, `help wanted`, `bug`, `enhancement`, `docs`, `performance`, `classifier`, `backend`, `frontend`, `needs-spec` (requiere propuesta de OpenSpec antes de implementar).
 
 ## Licencia
-Pendiente de decidir ([[Decisiones-Abiertas]]). Considerar también la licencia de modelos y datasets que se distribuyan.
+Pendiente de decidir ([[Decisiones Abiertas]]). Considerar también la licencia de modelos y datasets que se distribuyan.

@@ -7,12 +7,12 @@ updated: 2026-10-09
 
 # Onboarding y cómo contribuir
 
-Contexto: [[00-Home]]. Método de trabajo: [[15-Flujo-con-OpenSpec]].
+Contexto: [[Home]]. Método de trabajo: [[15-Flujo-con-OpenSpec]].
 
 Objetivo: que una persona nueva **ejecute el proyecto en menos de 15 minutos** y sepa dónde empezar a aportar.
 
 ## Ruta de bienvenida
-1. Leer [[01-Vision-y-Objetivos]] (5 min) y [[02-Arquitectura]] (10 min).
+1. Leer [[Meta]] (5 min) y [[Arquitectura]] (10 min).
 2. Levantar el sistema con el simulador de chat (sin necesidad de Twitch):
    ```
    git clone <repo>
@@ -43,7 +43,7 @@ Un `Makefile` (o `justfile`) con comandos comunes: `make dev`, `make test`, `mak
 - PRs pequeños, con descripción del *por qué*, pruebas y enlace al cambio de OpenSpec.
 - Estilo: lo que imponen los linters de cada componente (CI lo verifica).
 - Documentación: si cambias comportamiento, actualiza `docs/` y las specs.
-- Idioma: **pendiente de decidir** (español, inglés o ambos); ver [[Decisiones-Abiertas]].
+- Idioma: **pendiente de decidir** (español, inglés o ambos); ver [[Decisiones Abiertas]].
 
 ## Roles y gobernanza (inicial)
 - **Maintainers:** revisan y fusionan; definen la dirección.

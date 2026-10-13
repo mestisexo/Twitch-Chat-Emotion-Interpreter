@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Pruebas
 
-Contexto: [[10-CI-CD-GitHub]], [[07-Latencia-y-Rendimiento]].
+Contexto: [[CI CD GitHub]], [[07-Latencia-y-Rendimiento]].
 
 ## Estrategia por niveles
 | Nivel | Qué verifica | Herramientas |

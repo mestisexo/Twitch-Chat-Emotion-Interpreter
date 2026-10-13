@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Clasificador de emociones
 
-Contexto: [[02-Arquitectura]]. Contrato gRPC: [[06-Contratos-e-Integracion]]. Decisión de servicio separado: [[0004-clasificador-servicio-separado]].
+Contexto: [[Arquitectura]]. Contrato gRPC: [[06-Contratos-e-Integracion]]. Decisión de servicio separado: [[0004-clasificador-servicio-separado]].
 
 ## Rol
 Recibe lotes de mensajes cortos y devuelve, para cada uno, una probabilidad por emoción. No guarda estado entre llamadas.

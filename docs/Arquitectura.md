@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Arquitectura
 
-Volver a [[00-Home]]. Contratos detallados en [[06-Contratos-e-Integracion]].
+Volver a [[Home]]. Contratos detallados en [[06-Contratos-e-Integracion]].
 
 ## Componentes
 | Componente   | Tecnología                | Responsabilidad                                                               | Nota                             |

@@ -7,11 +7,11 @@ updated: 2026-10-09
 
 # Roadmap
 
-Contexto: [[01-Vision-y-Objetivos]], [[15-Flujo-con-OpenSpec]]. Cada ítem se ejecuta como un cambio de OpenSpec (`id` entre comillas invertidas).
+Cada paso se ejecuta como un cambio de OpenSpec [[15-Flujo-con-OpenSpec]] (`id` entre comillas invertidas).
 
 ## M0: Fundaciones
 - [ ] `bootstrap-monorepo`: estructura, Makefile, `.env.example`, README
-- [ ] `add-ci-pipeline`: workflows básicos por componente ([[10-CI-CD-GitHub]])
+- [ ] `add-ci-pipeline`: workflows básicos por componente ([[CI CD GitHub]])
 - [ ] `add-proto-contracts`: `proto/` + `buf` ([[06-Contratos-e-Integracion]])
 - [ ] Archivos de comunidad y licencia ([[14-Onboarding-y-Contribuir]])
 

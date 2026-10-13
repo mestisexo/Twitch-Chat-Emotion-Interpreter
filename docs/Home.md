@@ -5,22 +5,22 @@ status: vivo
 updated: 2026-10-09
 ---
 
-# 🌡️ Termómetro de Emociones del Chat
+# 🌡️ Termómetro de Emociones del Chat de Twitch
 
 > [!note] Nombre provisional
-> El nombre definitivo está pendiente (ver [[Decisiones-Abiertas]]). En estos documentos usamos "el termómetro".
+> El nombre definitivo está pendiente (ver [[Decisiones Abiertas]]). En estos documentos usamos "el termómetro".
 
-**En una frase:** un sistema open source que lee el chat de Twitch en tiempo real, clasifica la emoción de los mensajes y se la muestra al streamer como un termómetro, para que perciba el ánimo del chat aunque no pueda leer todos los mensajes.
+**En una frase:** un sistema open source que lee el chat de Twitch ==🟡en tiempo real== y clasifica la emoción general. Se la muestra al streamer como un panel de obs, y a la audiencia como un polígono multicolor que se mueve por la parte inferior de la pantalla.
 
-## Mapa del vault
+## Mapa
 
 ### Por qué y qué
-- [[01-Vision-y-Objetivos]]: problema, objetivo, alcance, métricas de éxito
-- [[16-Roadmap]]: hitos y su relación con los cambios de OpenSpec
-- [[17-Glosario]]
+- [[Meta]] - A que se quiere llegar 
+- [[Roadmap]]: hitos y su relación con los cambios de OpenSpec
+- [[Glosario]]
 
 ### Cómo está construido
-- [[02-Arquitectura]]: visión general y flujo de datos
+- [[Arquitectura]]: visión general y flujo de datos
 - [[03-Backend-Go]]
 - [[04-Frontend-Vite]]
 - [[05-Clasificador-de-Emociones]]
@@ -34,13 +34,13 @@ updated: 2026-10-09
 
 ### Producción y comunidad
 - [[09-Despliegue-Docker]]
-- [[10-CI-CD-GitHub]]
+- [[CI CD GitHub]]
 - [[13-Seguridad-y-Privacidad]]
 - [[14-Onboarding-y-Contribuir]]
 
 ### Método de trabajo
 - [[15-Flujo-con-OpenSpec]]: cómo se reparten la responsabilidad estos docs y `openspec/`
-- Decisiones: [[Decisiones-Abiertas]] y carpeta de ADRs ([[0000-plantilla-adr]])
+- Decisiones: [[Decisiones Abiertas]] y carpeta de ADRs ([[0000-plantilla-adr]])
 
 ## Decisiones tomadas (propuestas)
 | ADR | Decisión | Estado |

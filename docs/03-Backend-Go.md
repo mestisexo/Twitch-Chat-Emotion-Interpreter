@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Backend (Go)
 
-Contexto: [[02-Arquitectura]]. Contratos: [[06-Contratos-e-Integracion]].
+Contexto: [[Arquitectura]]. Contratos: [[06-Contratos-e-Integracion]].
 
 ## Responsabilidades
 1. Conectarse al chat de Twitch y mantener la conexión (reconexión con backoff).
@@ -82,4 +82,4 @@ Para cada emoción *e* en el instante *t*:
 
 ## Preguntas abiertas
 - Biblioteca para IRC: ¿propia (el protocolo es simple) o dependencia? Se decide en el cambio de OpenSpec correspondiente.
-- ¿Un solo canal por instancia en v1? Recomendado: sí, para simplificar. Ver [[16-Roadmap]].
+- ¿Un solo canal por instancia en v1? Recomendado: sí, para simplificar. Ver [[Roadmap]].

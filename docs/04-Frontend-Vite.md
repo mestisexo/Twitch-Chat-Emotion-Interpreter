@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Frontend (Vite)
 
-Contexto: [[02-Arquitectura]]. Eventos que consume: [[06-Contratos-e-Integracion]].
+Contexto: [[Arquitectura]]. Eventos que consume: [[06-Contratos-e-Integracion]].
 
 ## Vistas
 1. **Overlay (OBS):** fuente de navegador con fondo transparente. Muestra el termómetro: emoción dominante, aguja o barra de intensidad y, opcionalmente, la distribución. Debe ser muy ligero.
@@ -18,7 +18,7 @@ Configuración por parámetros de URL para que el streamer solo pegue un enlace 
 
 ## Stack
 - Vite + TypeScript.
-- Framework: **pendiente** (ver [[Decisiones-Abiertas]]). Criterio: el overlay debe pesar poco y arrancar rápido; para una vista tan pequeña, una librería ligera o TypeScript sin framework es razonable. El panel puede justificar más estructura.
+- Framework: **pendiente** (ver [[Decisiones Abiertas]]). Criterio: el overlay debe pesar poco y arrancar rápido; para una vista tan pequeña, una librería ligera o TypeScript sin framework es razonable. El panel puede justificar más estructura.
 - Tests con Vitest; E2E con Playwright (ver [[11-Pruebas]]).
 
 ## Conexión en tiempo real

@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Flujo con OpenSpec
 
-Contexto: [[00-Home]], [[16-Roadmap]].
+Contexto: [[Home]], [[Roadmap]].
 
 ## Reparto de responsabilidades
 Dos lugares, dos propósitos. No se duplican: se enlazan.
@@ -71,8 +71,8 @@ Toda optimización de rendimiento requiere un benchmark que la justifique (docs/
 ```
 Explore → Propose → Apply → Archive
 ```
-1. **Explore:** se usa al comienzo de una funcionalidad incierta (por ejemplo, elegir modelo, o IRC vs EventSub). Las conclusiones relevantes se vuelcan a un ADR o a [[Decisiones-Abiertas]].
-2. **Propose:** genera `openspec/changes/<id>/` con propuesta, deltas de spec y tareas. **Se revisa** que la propuesta respete [[02-Arquitectura]] y los contratos.
+1. **Explore:** se usa al comienzo de una funcionalidad incierta (por ejemplo, elegir modelo, o IRC vs EventSub). Las conclusiones relevantes se vuelcan a un ADR o a [[Decisiones Abiertas]].
+2. **Propose:** genera `openspec/changes/<id>/` con propuesta, deltas de spec y tareas. **Se revisa** que la propuesta respete [[Arquitectura]] y los contratos.
 3. **Apply:** el agente implementa las tareas; las pruebas de [[11-Pruebas]] son parte de las tareas, no un extra.
 4. **Archive:** al cerrar, las specs se actualizan. Si el cambio alteró la arquitectura o una decisión, se actualiza la nota o el ADR correspondiente en `docs/`.
 
@@ -82,7 +82,7 @@ Explore → Propose → Apply → Archive
 - Las notas de `docs/` enlazan a las capacidades; las specs pueden enlazar a las notas como contexto.
 
 ## Primeros cambios y prompts de arranque
-Ver el orden completo en [[16-Roadmap]]. Para empezar:
+Ver el orden completo en [[Roadmap]]. Para empezar:
 
 ```
 /opsx:propose bootstrap-monorepo: crear la estructura de carpetas de docs/02-Arquitectura.md

@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Despliegue con Docker
 
-Contexto: [[02-Arquitectura]]. Pipeline que construye las imágenes: [[10-CI-CD-GitHub]].
+Contexto: [[Arquitectura]]. Pipeline que construye las imágenes: [[CI CD GitHub]].
 
 ## Imágenes
 | Imagen | Contenido | Base sugerida |
@@ -25,7 +25,7 @@ Un solo contenedor `app` sirve API y frontend: menos piezas para quien instala. 
 - **Sin secretos en la imagen:** todo por variables de entorno o secretos del orquestador.
 - Usuario no root, sistema de archivos de solo lectura cuando sea posible.
 - `HEALTHCHECK` o sondas apuntando a `/healthz` y `/readyz` ([[06-Contratos-e-Integracion]]).
-- Escaneo de vulnerabilidades en CI (ver [[10-CI-CD-GitHub]]).
+- Escaneo de vulnerabilidades en CI (ver [[CI CD GitHub]]).
 
 ## Docker Compose (boceto)
 ```yaml
