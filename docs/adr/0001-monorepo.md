@@ -18,7 +18,7 @@ El sistema tiene tres componentes (Go, Vite, Python) unidos por contratos. El pr
 2. **Un repo por componente:** despliegues independientes, pero cambios coordinados en varios PRs, contratos desincronizados y onboarding más difícil.
 
 ## Decisión
-Monorepo, con carpetas por componente y filtros de rutas en CI ([[CI CD GitHub]]).
+Monorepo, con carpetas por componente y filtros de rutas en CI ([[GitHub]]).
 
 ## Consecuencias
 - (+) Cambios que tocan contrato y consumidores van en un solo PR.

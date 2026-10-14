@@ -26,12 +26,12 @@ Una carpeta por capacidad en `openspec/specs/`:
 
 | Capacidad | Resumen | Nota relacionada |
 |---|---|---|
-| `chat-ingest` | Conexión a Twitch y entrega de mensajes | [[03-Backend-Go]] |
-| `message-preprocessing` | Normalización, filtros, deduplicación, tope por usuario | [[03-Backend-Go]] |
+| `chat-ingest` | Conexión a Twitch y entrega de mensajes | [[Backend]] |
+| `message-preprocessing` | Normalización, filtros, deduplicación, tope por usuario | [[Backend]] |
 | `emotion-classification` | Contrato y calidad mínima del clasificador | [[05-Clasificador-de-Emociones]] |
-| `emotion-aggregation` | Ventana, intensidad, tendencia | [[03-Backend-Go]] |
+| `emotion-aggregation` | Ventana, intensidad, tendencia | [[Backend]] |
 | `realtime-stream-api` | SSE, ticks, modo degradado | [[06-Contratos-e-Integracion]] |
-| `thermometer-ui` | Overlay y panel | [[04-Frontend-Vite]] |
+| `thermometer-ui` | Overlay y panel | [[Frontend]] |
 
 ## Ejemplo de requisito (formato típico de OpenSpec)
 ```markdown

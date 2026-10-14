@@ -52,7 +52,7 @@ message EmotionScore {
 Notas:
 - Las etiquetas son `string` + `taxonomy_version` para poder evolucionar la taxonomía sin romper compatibilidad.
 - Salud: servicio estándar `grpc.health.v1.Health`.
-- **Compatibilidad:** se valida en CI con `buf lint` y `buf breaking` ([[CI CD GitHub]]).
+- **Compatibilidad:** se valida en CI con `buf lint` y `buf breaking` ([[GitHub]]).
 - Código cliente/servidor se genera; no se edita a mano.
 
 ## 2. Backend → Frontend (SSE)
@@ -89,7 +89,7 @@ Reglas:
 | `GET /metrics` | Métricas Prometheus ([[12-Observabilidad]]) |
 
 ## 4. Configuración del overlay
-Parámetros por URL en el frontend (ver [[04-Frontend-Vite]]). El backend no necesita saber de ellos.
+Parámetros por URL en el frontend (ver [[Frontend]]). El backend no necesita saber de ellos.
 
 ## Versionado
 - Contratos: versión en la ruta/paquete (`v1`).

@@ -5,24 +5,19 @@ status: vivo
 updated: 2026-10-09
 ---
 
-# 🌡️ Termómetro de Emociones del Chat de Twitch
+# Home
 
-> [!note] Nombre provisional
-> El nombre definitivo está pendiente (ver [[Decisiones Abiertas]]). En estos documentos usamos "el termómetro".
 
-**En una frase:** un sistema open source que lee el chat de Twitch ==🟡en tiempo real== y clasifica la emoción general. Se la muestra al streamer como un panel de obs, y a la audiencia como un polígono multicolor que se mueve por la parte inferior de la pantalla.
+## 🎇 Definición
 
-## Mapa
+- [[Meta]] 
 
-### Por qué y qué
-- [[Meta]] - A que se quiere llegar 
-- [[Roadmap]]: hitos y su relación con los cambios de OpenSpec
-- [[Glosario]]
 
-### Cómo está construido
+## Cómo está construido
+
 - [[Arquitectura]]: visión general y flujo de datos
-- [[03-Backend-Go]]
-- [[04-Frontend-Vite]]
+- [[Backend]]
+- [[Frontend]]
 - [[05-Clasificador-de-Emociones]]
 - [[06-Contratos-e-Integracion]]: gRPC, eventos SSE, versionado
 - [[08-Datos-y-Almacenamiento]]
@@ -34,7 +29,7 @@ updated: 2026-10-09
 
 ### Producción y comunidad
 - [[09-Despliegue-Docker]]
-- [[CI CD GitHub]]
+- [[GitHub]]
 - [[13-Seguridad-y-Privacidad]]
 - [[14-Onboarding-y-Contribuir]]
 
