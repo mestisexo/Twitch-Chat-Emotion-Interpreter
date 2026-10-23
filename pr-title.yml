@@ -1,0 +1,33 @@
+name: pr-title
+
+on:
+  pull_request_target:
+    types: [opened, edited, synchronize, reopened]
+
+permissions:
+  pull-requests: read
+
+jobs:
+  validate:
+    name: Validar título del PR (Conventional Commits)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: amannn/action-semantic-pull-request@v5
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          types: |
+            feat
+            fix
+            docs
+            refactor
+            perf
+            test
+            build
+            ci
+            chore
+          # La descripción no debe empezar con mayúscula
+          subjectPattern: ^(?![A-Z]).+$
+          subjectPatternError: |
+            La descripción del título "{subject}" no debe empezar con mayúscula.
+            Ejemplo: feat: agrega exportación a CSV
