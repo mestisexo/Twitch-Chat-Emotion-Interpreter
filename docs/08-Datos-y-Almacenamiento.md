@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Datos y almacenamiento
 
-Contexto: [[02-Arquitectura]]. Decisión: [[0005-no-persistir-mensajes-crudos]]. Privacidad: [[13-Seguridad-y-Privacidad]].
+Contexto: [[Arquitectura]]. Decisión: [[0005-no-persistir-mensajes-crudos]]. Privacidad: [[13-Seguridad-y-Privacidad]].
 
 ## v1: sin base de datos
 Todo el estado vive **en memoria**:
@@ -16,7 +16,7 @@ Todo el estado vive **en memoria**:
 - Línea base móvil del ritmo de mensajes.
 - Un historial corto de estados para el panel (por ejemplo la última hora), también en memoria.
 
-Si el proceso se reinicia, el termómetro se reconstruye en pocos segundos. No hace falta persistencia para cumplir el objetivo de [[01-Vision-y-Objetivos]].
+Si el proceso se reinicia, el termómetro se reconstruye en pocos segundos. No hace falta persistencia para cumplir el objetivo de [[Meta]].
 
 ## Qué NO se guarda
 - **El texto de los mensajes.** Se procesa y se descarta.

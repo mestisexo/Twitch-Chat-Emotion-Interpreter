@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Pruebas
 
-Contexto: [[10-CI-CD-GitHub]], [[07-Latencia-y-Rendimiento]].
+Contexto: [[GitHub]], [[07-Latencia-y-Rendimiento]].
 
 ## Estrategia por niveles
 | Nivel | Qué verifica | Herramientas |
@@ -22,7 +22,7 @@ Contexto: [[10-CI-CD-GitHub]], [[07-Latencia-y-Rendimiento]].
 
 ## El simulador de chat
 Pieza central para probar sin depender de Twitch real:
-- Implementa la interfaz `ChatSource` del backend ([[03-Backend-Go]]).
+- Implementa la interfaz `ChatSource` del backend ([[Backend]]).
 - Modos: **sintético** (genera mensajes con ritmo y emociones configurables), **replay** (reproduce grabaciones anonimizadas) y **guion** (secuencias deterministas para pruebas, por ejemplo "neutral 20 s, luego hype").
 - Permite verificar de forma determinista que el termómetro reacciona como se espera.
 

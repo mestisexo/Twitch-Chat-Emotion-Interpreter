@@ -11,14 +11,14 @@ updated: 2026-10-09
 - **Fecha:** 2026-10-09
 
 ## Contexto
-El sistema tiene tres componentes (Go, Vite, Python) unidos por contratos. El proyecto será open source y queremos que quien llegue lo ejecute fácil. Ver [[02-Arquitectura]].
+El sistema tiene tres componentes (Go, Vite, Python) unidos por contratos. El proyecto será open source y queremos que quien llegue lo ejecute fácil. Ver [[Arquitectura]].
 
 ## Opciones
 1. **Monorepo:** todo junto. Cambios de contrato atómicos, un solo lugar para issues, docs y OpenSpec, una sola clonación.
 2. **Un repo por componente:** despliegues independientes, pero cambios coordinados en varios PRs, contratos desincronizados y onboarding más difícil.
 
 ## Decisión
-Monorepo, con carpetas por componente y filtros de rutas en CI ([[10-CI-CD-GitHub]]).
+Monorepo, con carpetas por componente y filtros de rutas en CI ([[GitHub]]).
 
 ## Consecuencias
 - (+) Cambios que tocan contrato y consumidores van en un solo PR.

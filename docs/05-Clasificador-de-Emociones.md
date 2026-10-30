@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Clasificador de emociones
 
-Contexto: [[02-Arquitectura]]. Contrato gRPC: [[06-Contratos-e-Integracion]]. Decisión de servicio separado: [[0004-clasificador-servicio-separado]].
+Contexto: [[Arquitectura]]. Contrato gRPC: [[06-Contratos-e-Integracion]]. Decisión de servicio separado: [[0004-clasificador-servicio-separado]].
 
 ## Rol
 Recibe lotes de mensajes cortos y devuelve, para cada uno, una probabilidad por emoción. No guarda estado entre llamadas.
@@ -76,3 +76,25 @@ classifier/
 
 ## Imagen y reproducibilidad
 Los pesos del modelo se descargan en build con **revisión fijada** (hash/tag) y quedan dentro de la imagen, para que "imagen fija" signifique resultados reproducibles. Ver [[09-Despliegue-Docker]].
+
+
+
+
+**Cálculo (incremental):** en vez de recorrer todos los mensajes de la ventana, se mantiene por canal un acumulador ponderado por emoción (`N_e`) y la suma de pesos (`D`). Al llegar un mensaje, ambos se multiplican por el factor de decaimiento `0.5^(Δt / HALF_LIFE)` y luego se suma el mensaje nuevo (`N_e += w·p_e`, `D += w`). El score es `N_e / D`. Es equivalente a la fórmula, con costo constante por mensaje y sin guardar historial. Intensidad y tendencia siguen el mismo principio con medias móviles exponenciales (rápida y lenta).
+
+
+
+
+## Taxonomía preliminar de emociones
+Punto de partida; se valida con datos reales del chat (ver [[Decisiones Abiertas]]).
+
+| Etiqueta                 | Ejemplos de señal en el chat                |
+| ------------------------ | ------------------------------------------- |
+| `joy` (diversión)        | `KEKW`, `LUL`, "jajaja", xd, xdd            |
+| `hype` (emoción/euforia) | `PogChamp`, mayúsculas, "VAMOOOS", SII      |
+| `surprise`               | "QUÉ", "no way", `OMEGALUL`, what           |
+| `anger`                  | insultos, "qué asco", críticas fuertes      |
+| `sadness`                | `F`, "qué pena", `Sadge`, que triste        |
+| `fear`                   | "cuidado", "no no no" en situaciones tensas |
+
+Los emotes y el argot propio de Twitch pesan mucho y los modelos genéricos los entienden mal: es uno de los retos centrales. (pendiente por revisar)

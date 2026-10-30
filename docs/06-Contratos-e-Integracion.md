@@ -7,7 +7,7 @@ updated: 2026-10-09
 
 # Contratos e integración
 
-Contexto: [[02-Arquitectura]]. Decisiones: [[0002-sse-para-tiempo-real]], [[0003-grpc-para-clasificador]].
+Contexto: [[Arquitectura]]. Decisiones: [[0002-sse-para-tiempo-real]], [[0003-grpc-para-clasificador]].
 
 Los contratos son **la fuente de verdad** entre componentes. Cualquier cambio de contrato pasa por una propuesta de OpenSpec ([[15-Flujo-con-OpenSpec]]).
 
@@ -52,7 +52,7 @@ message EmotionScore {
 Notas:
 - Las etiquetas son `string` + `taxonomy_version` para poder evolucionar la taxonomía sin romper compatibilidad.
 - Salud: servicio estándar `grpc.health.v1.Health`.
-- **Compatibilidad:** se valida en CI con `buf lint` y `buf breaking` ([[10-CI-CD-GitHub]]).
+- **Compatibilidad:** se valida en CI con `buf lint` y `buf breaking` ([[GitHub]]).
 - Código cliente/servidor se genera; no se edita a mano.
 
 ## 2. Backend → Frontend (SSE)
@@ -89,7 +89,7 @@ Reglas:
 | `GET /metrics` | Métricas Prometheus ([[12-Observabilidad]]) |
 
 ## 4. Configuración del overlay
-Parámetros por URL en el frontend (ver [[04-Frontend-Vite]]). El backend no necesita saber de ellos.
+Parámetros por URL en el frontend (ver [[Frontend]]). El backend no necesita saber de ellos.
 
 ## Versionado
 - Contratos: versión en la ruta/paquete (`v1`).

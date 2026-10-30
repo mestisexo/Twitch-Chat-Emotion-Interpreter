@@ -31,7 +31,7 @@ Contexto: [[08-Datos-y-Almacenamiento]], [[0005-no-persistir-mensajes-crudos]].
 | CORS | Lista explícita de orígenes permitidos |
 | Entrada al clasificador | Límites de tamaño de lote y de longitud de texto; timeouts |
 | Contenedores | Usuario no root, imagen mínima, sistema de archivos de solo lectura |
-| Dependencias | Dependabot, escaneo de imágenes, versiones fijadas ([[10-CI-CD-GitHub]]) |
+| Dependencias | Dependabot, escaneo de imágenes, versiones fijadas ([[GitHub]]) |
 | Cadena de suministro | Acciones de CI fijadas; revisar licencias de modelos |
 | gRPC interno | Red interna de Compose; TLS si el clasificador corre en otra máquina |
 
@@ -39,5 +39,5 @@ Contexto: [[08-Datos-y-Almacenamiento]], [[0005-no-persistir-mensajes-crudos]].
 `SECURITY.md` con un canal privado (por ejemplo "Security advisories" de GitHub) y plazos de respuesta.
 
 ## Licencias
-- Código: pendiente ([[Decisiones-Abiertas]]).
+- Código: pendiente ([[Decisiones Abiertas]]).
 - Modelos y datasets: verificar compatibilidad con la licencia del proyecto y documentarla.
