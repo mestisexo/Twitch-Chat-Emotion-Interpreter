@@ -29,7 +29,7 @@ frontend/
 
 ## 🎷 Overlay
 
-- Muestra un polígono generado por pixijs que cambia de color de acuerdo al veredicto de emoción proveniente del backend.
+- Muestra un polígono generado por pixijs que cambia de color de acuerdo al veredicto de emoción proveniente del backend. (test)
 - Configuración por parámetros de URL para que el streamer solo pegue un enlace en OBS, por ejemplo: `/overlay?theme=dark&show=distribution&scale=1`
 
 ## 📚 Dashboard
